@@ -1,2 +1,1 @@
-# 1ra Pagina de Derivate.stem
-Editada
+#Entre Físicos 2025
