@@ -1446,7 +1446,7 @@ input, select, textarea {
 		background-color: #4091bf;
 		border-radius: 8px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.35);
-		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+		text-shadow: -.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
 		color: #fff !important;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -1770,7 +1770,7 @@ input, select, textarea {
 		background-color: rgba(59, 62, 69, 0.9);
 		border-radius: 8px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
-		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+		text-shadow: --.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
 		padding: 1.5em;
 		line-height: 2.5em;
 		min-width: 15em;
@@ -1812,15 +1812,16 @@ input, select, textarea {
 			border-bottom: 0; /* MP changes  to remove horizontal line below the title */
 			border-right: 0; /* MP changes  to remove horizontal line above the title */
 			color: #fff;
-			/* color: rgba(255, 255, 255, 0.75); */
-			font-size: 2.35em;
-			font-weight: 700;
+			/*color: rgba(255, 255, 255, 0.99);*/
+			font-size: 2.5em;
+			font-weight: 600;
 			line-height: 1.3em;
 			margin: 0 0 1.5em 0;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 		}
 
 			#banner h2 strong {
-				font-weight: 800;
+				font-weight: 900;
 				color: inherit;
 			}
 
@@ -1868,21 +1869,20 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("images/bg01.png"), url("../../images/incred_cover.jpg");
+		background: url("../../images/posgrado-img.jpeg");
 		background-position: top left, center center;
 		background-size: auto, cover;
 		padding: 3em 0;
 	}
 
 		#header-wrapper-home {
-		background: url("images/bg01.png"), url("../../images/incred_cover.jpg");
+		background: url("../../images/posgrado-img.jpeg");
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		background-size: cover;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
 
 	}
 
@@ -1900,7 +1900,7 @@ input, select, textarea {
 	}
 
 	#header-wrapper-people {
-        background: url("../../images/toledo-day1.jpg");
+        background: url("../../images/posgrado-img.jpeg");
         background-position: top left, center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1937,7 +1937,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-poster {
-        background:  url("../../images/toledo-bridge-night2.jpg");
+        background:  url("../../images/poster.pdf");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1991,7 +1991,7 @@ input, select, textarea {
 	}
 
 	#footer-wrapper-logo{
-		background-image:  url("images/bg06.png");
+		background-image: url("images/bg06.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom center;
@@ -2014,7 +2014,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			position: relative;
-			text-shadow: 1px 1px 0 #fff;
+			text-shadow: -.5px -.5px 1.5px #fff;
 			background-color: #fff;
 			background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");
 			background-repeat: no-repeat, no-repeat, repeat;
@@ -2024,7 +2024,7 @@ input, select, textarea {
 
 		.wrapper.style3 {
 			position: relative;
-			text-shadow: 1px 1px 0 #fff;
+			text-shadow: -.5px -.5px 1.5px #fff;
 			background-color: #fff;
 			background-image: url("images/bg03.png"), url("images/bg02.png");
 			background-repeat: no-repeat, repeat;
@@ -2044,16 +2044,16 @@ input, select, textarea {
 
 		#header .inner {
 			background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
-			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
+			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgb(0, 36, 102)), url("images/bg02.png");
 			background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 			background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 			position: relative;
 			height: 5.5em;
-			background-color: #3B3E45;
-			background-color: rgba(59, 62, 69, 0.9);
+			/*background-color: #36efbe;*/
+			background-color: rgba(54, 100, 239, 0.838);
 			border-radius: 8px;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.45), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.15);
-			text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+			text-shadow: -.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
 		}
 
 		#header h1 {
@@ -2069,7 +2069,7 @@ input, select, textarea {
 
 	#footer {
 		margin-bottom: 0;
-		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+		text-shadow: -.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
 		position: relative;
 		z-index: 2;
 	}
@@ -2221,20 +2221,20 @@ input, select, textarea {
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
 				background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
-				background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
+				background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 35, 102, 0.35)), url("images/bg02.png");
 				background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 				background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				background-color: rgba(59, 62, 69, 0.9);
+				background-color: rgba(54, 100, 239, 0.9);
 				box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), 0px 1px 6px 0px rgba(0, 0, 0, 0.35);
 				display: block;
 				height: 44px;
 				left: 0;
 				position: fixed;
-				text-shadow: -1px -1px 0 black;
+				text-shadow: -.5px -.5px 1.5px black;
 				top: 0;
 				width: 100%;
 				z-index: 10001;
@@ -2295,9 +2295,9 @@ input, select, textarea {
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
 				background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
-				background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
+				background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 30, 0, 0.35)), url("images/bg01.png");
 				background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
-				background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
+				background-image: linear-gradient(rgba(255, 255, 255, 0.041), rgb(0, 36, 102)), url("images/bg01.png");
 				-moz-transform: translateX(-275px);
 				-webkit-transform: translateX(-275px);
 				-ms-transform: translateX(-275px);
@@ -2306,7 +2306,7 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				background-color: #7eff14;
+				background-color: rgba(54, 100, 239, 0.838);
 				box-shadow: inset -1px 0px 0px 0px rgba(0, 0, 0, 0.5), inset -2px 0px 0px rgba(255, 255, 255, 0.15), inset -2px 0px 10px 0px rgba(0, 0, 0, 0.35);
 				display: block;
 				height: 100%;
