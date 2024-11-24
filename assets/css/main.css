@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,400italic,700,800");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -87,7 +88,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #303238 url("images/bg01.png");
+		background: #3665EF ;
 	}
 
 		body.is-preload * {
@@ -102,8 +103,8 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		font-family: 'Open Sans', sans-serif;
-		color: #7b818c;
+		font-family: 'Inter', sans-serif;
+		color: #5c6169;
 		font-weight: 400;
 		font-size: 11pt;
 		line-height: 1.85em;
@@ -120,7 +121,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		text-transform: uppercase;
-		font-weight: 800;
+		font-weight: 900;
 		letter-spacing: 0.04em;
 		color: #404248;
 		margin: 0 0 1em 0;
@@ -1815,7 +1816,7 @@ input, select, textarea {
 			/*color: rgba(255, 255, 255, 0.99);*/
 			font-size: 2.5em;
 			font-weight: 600;
-			line-height: 1.3em;
+			line-height: 1.05em;
 			margin: 0 0 1.5em 0;
 			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 		}
@@ -1869,29 +1870,28 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("../../images/posgrado-img.jpeg");
+		background: url("../../images/sky.jpg");
 		background-position: top left, center center;
 		background-size: auto, cover;
 		padding: 3em 0;
 	}
 
-		#header-wrapper-home {
-		background: url("../../images/posgrado-img.jpeg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		height: auto;
-		width: 100%;
-        padding: 3em 0;
-
+	#header-wrapper-home {
+	background: url("../../images/sky.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+    padding: 3em ;
 	}
 
 
-	#header-wrapper-venue {
-		background: url("../../images/toledo-elgreco.jpg");
+	#header-wrapper-location {
+		background: url("../../images/posgrado.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: bottom;
+		background-position: center;
 		height: 100%;
 		width: 100%;
 		object-fit: contain;
@@ -2004,7 +2004,7 @@ input, select, textarea {
 
 
 	.wrapper {
-		padding: 7em 0 7em 0;
+		padding: 5em 0 6em 0;
 	}
 
 		.wrapper > .inner {
@@ -2015,7 +2015,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			position: relative;
 			text-shadow: -.5px -.5px 1.5px #fff;
-			background-color: #fff;
+			background-color: #ffffff;
 			background-image: url("images/bg03.png"), url("images/bg04.png"), url("images/bg02.png");
 			background-repeat: no-repeat, no-repeat, repeat;
 			background-size: 100% 15em, 100% 15em, auto auto;
@@ -2044,13 +2044,13 @@ input, select, textarea {
 
 		#header .inner {
 			background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
-			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgb(0, 36, 102)), url("images/bg02.png");
+			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgb(0, 36, 102, 0.9));
 			background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 			background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 			position: relative;
 			height: 5.5em;
 			/*background-color: #36efbe;*/
-			background-color: rgba(54, 100, 239, 0.838);
+			background-color: rgba(54, 100, 239, 0.9);
 			border-radius: 8px;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.45), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.15);
 			text-shadow: -.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
@@ -2160,7 +2160,7 @@ input, select, textarea {
 
 			#banner {
 				width: 100%;
-				padding: 40em 0 2em 0;
+				padding: 4em 0 2em 0;
 			}
 
 				#banner h2 {
@@ -2221,15 +2221,15 @@ input, select, textarea {
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
 				background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
-				background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 35, 102, 0.35)), url("images/bg02.png");
+				background-image: -webkit-linear-gradient(top, rgba(54, 101, 239), rgb(0, 35, 102)), url("images/bg02.png");
 				background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 				background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg02.png");
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				background-color: rgba(54, 100, 239, 0.9);
-				box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.075), 0px 1px 6px 0px rgba(0, 0, 0, 0.35);
+				background-color: rgba(54, 100, 239, 0);
+				box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1), 0px 1px 6px 0px rgba(0, 0, 0, 0.35);
 				display: block;
 				height: 44px;
 				left: 0;
@@ -2297,7 +2297,7 @@ input, select, textarea {
 				background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
 				background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 30, 0, 0.35)), url("images/bg01.png");
 				background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35)), url("images/bg01.png");
-				background-image: linear-gradient(rgba(255, 255, 255, 0.041), rgb(0, 36, 102)), url("images/bg01.png");
+				background-image: linear-gradient(rgba(255, 255, 255, 0.041), rgb(0, 23, 94)), url("images/bg01.png");
 				-moz-transform: translateX(-275px);
 				-webkit-transform: translateX(-275px);
 				-ms-transform: translateX(-275px);
@@ -2451,7 +2451,7 @@ input, select, textarea {
 			}
 
 			h2 {
-				line-height: 1.5em;
+				line-height: .5em;
 			}
 
 		/* Section/Article */
@@ -2532,17 +2532,17 @@ input, select, textarea {
 				}
 
 			.wrapper {
-				padding: 3em 20px 3em 20px;
+				padding: 5em 20px 5em 20px;
 			}
 
 		/* Banner */
 
 			#banner {
-				padding: 40px 20px 40px 20px;
+				padding: 50px 20px 10px 20px;
 			}
 
 				#banner h2 {
-					font-size: 18pt !important;
+					font-size: 20pt !important;
 				}
 
 		/* Sidebar */
