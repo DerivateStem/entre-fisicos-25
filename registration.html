@@ -6,21 +6,26 @@
 -->
 <html>
 	<head>
-		<title>Derivate.Stem | Registro</title>
+		<title>Registro | [ EF25 ]</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			.lowercase {
             text-transform: lowercase;
-        }
+			}
+			.centered-text {
+                text-align: center; /* Center text horizontally */
+                width: 100%; /* Ensure full-width for centering */
+            }
+        
 		</style>
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
-				<div id="header-wrapper-abstract">
+				<div id="header-wrapper-registration">
 					<div class="container">
 
 						<!-- Header -->
@@ -28,7 +33,7 @@
 								<div class="inner">
 
 									<!-- Logo -->
-										<h1><a href="index.html" id="logo">Derivate.Stem</a></h1>
+										<h1><a href="index.html" id="logo">[ EF25 ]</a></h1>
 
 									<!-- Nav -->
 										<nav id="nav">
@@ -38,12 +43,18 @@
 												<li><a href="schedule.html">Programa</a></li>
 												<li class="current_page_item"><a href="registration.html">¡Regístrate!</a></li>
 												<li><a href="location.html">Ubicación</a></li>
+												<li><a href="coc.html">C<span class="lowercase">o</span>C</a></li>
 										</nav>
 
 								</div>
 							</header>
 							<div id="banner">
-								<strong><h2 align=center> Registro </strong></h2> 
+								<h2 align=center> 
+									<strong style="color: #ffffff;">
+										Registro
+									</strong>
+								</h2>
+							</div> 
 					</div>
 					</div>
 				</div>
@@ -56,32 +67,47 @@
 								<div id="content">
 
 									<!-- Content -->
-
+										
+									 
 										<article>
 											<header class="major">
-												<h2>ABSTRACT SUBMISSION</h2>
-												<!-- <p>Sidebars are not welcome here</p> -->
+												<h3>&#128198; Inscripciones: 4 de diciembre  </h3>
 											</header>
+											<div class="centered-text">
+												<p>
+													🕛 Aún no se abren las inscripciones 🕛
+													<br>
+													Regresa el 4 de diciembre
 
-											<!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-
-											<p></p>
-
-
+												</p>
+											</div>
+											<!--
+												<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeloTQ8vRUFeFcWIMFGk5WKAkito0M8zQ-3nB5kwwe4SsulNQ/viewform?embedded=true" 
+													width="100%" 
+													height="996" 
+													frameborder="0" 
+													marginheight="0" 
+													marginwidth="0">
+													Cargando…
+												</iframe>
+											-->
 										</article>
-
 										<article>
 											<header class="major">
-												<h2>REGISTRATION </h2>
-												<!-- <p>Sidebars are not welcome here</p> -->
+												<h3>⏰ Programa  </h3>
 											</header>
-
-											<!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-
-											<p></p>
-
-
-										</article>
+											<p>En caso de que lo necesites...</p>
+											<div id="table-program"></div>
+											<script>
+												fetch('table-program.html')
+													.then(response => response.text())
+													.then(html => {
+														document.getElementById('table-program').innerHTML = html;
+													})
+													.catch(err => console.error('Failed to load the schedule table:', err));
+											</script>
+										</article>	
+									
 
 
 								</div>

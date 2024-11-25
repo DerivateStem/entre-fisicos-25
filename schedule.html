@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Derivate.Stem | Registro</title>
+		<title>Programa | [ EF25 ]</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,7 +20,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
-				<div id="header-wrapper-abstract">
+				<div id="header-wrapper-schedule">
 					<div class="container">
 
 						<!-- Header -->
@@ -28,22 +28,27 @@
 								<div class="inner">
 
 									<!-- Logo -->
-										<h1><a href="index.html" id="logo">[ Entre Físicos ]</a></h1>
+										<h1><a href="index.html" id="logo">[ EF25 ]</a></h1>
 
 									<!-- Nav -->
 										<nav id="nav">
 											<ul>
 												<li><a href="index.html">Home</a></li>
-												<li><a href="the-people.html">Derívate</a></li>
+												<li><a href="people.html">Derívate</a></li>
 												<li class="current_page_item"><a href="schedule.html">Programa</a></li>
-												<li><a href="registration.html">¡Regístrate!</a></li>
+												<li><a href="registration.html" class="highlight">¡Regístrate!</a></li>
 												<li><a href="location.html">Ubicación</a></li>
+												<li><a href="coc.html">C<span class="lowercase">o</span>C</a></li>
 										</nav>
 
 								</div>
 							</header>
 							<div id="banner">
-								<strong><h2 align=center> Registro </strong></h2> 
+								<h2 align=center>
+									<strong style="color: #ffffff;">
+										Programa
+									</strong>
+								</h2> 
 					</div>
 					</div>
 				</div>
@@ -57,31 +62,23 @@
 
 									<!-- Content -->
 
-										<article>
-											<header class="major">
-												<h2>ABSTRACT SUBMISSION</h2>
-												<!-- <p>Sidebars are not welcome here</p> -->
-											</header>
-
-											<!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-
-											<p></p>
-
-
-										</article>
-
-										<article>
-											<header class="major">
-												<h2>REGISTRATION </h2>
-												<!-- <p>Sidebars are not welcome here</p> -->
-											</header>
-
-											<!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-
-											<p></p>
+									<article>
+										<header class="major">
+											<h3> ⏰ Programa del Evento</h3>
+										</header>
+										
+										<div id="table-program"></div>
+										<script>
+											fetch('table-program.html')
+												.then(response => response.text())
+												.then(html => {
+													document.getElementById('table-program').innerHTML = html;
+												})
+												.catch(err => console.error('Failed to load the schedule table:', err));
+										</script>
+									</article>
 
 
-										</article>
 
 
 								</div>

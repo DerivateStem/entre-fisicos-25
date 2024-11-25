@@ -113,6 +113,7 @@ input, select, textarea {
 	a {
 		color: inherit;
 		text-decoration: underline;
+		color: #3665ef; 
 	}
 
 		a:hover {
@@ -1358,21 +1359,23 @@ input, select, textarea {
 
 			table.default td {
 				padding: 0.5em 1em 0.5em 1em;
+				text-align: center;
 			}
 
 			table.default th {
-				text-align: left;
+				text-align: center;
 				padding: 0.5em 1em 0.5em 1em;
 				text-transform: uppercase;
 				font-weight: 800;
 				letter-spacing: 0.04em;
 				margin: 0 0 1em 0;
-				font-size: 0.8em;
+				font-size: 0.9em;
 			}
 
 			table.default thead {
-				background: #404248;
+				background: #3665EF;
 				color: #fff;
+				
 			}
 
 /* Image */
@@ -1724,42 +1727,89 @@ input, select, textarea {
 	#nav {
 		position: absolute;
 		right: 2em;
-		top: 0;
-		line-height: 5.5em;
+		top: 1.8em;
+		line-height: normal;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
-		#nav > ul > li {
-			float: left;
-			padding: 0 0.8em 0 0.8em;
+		#nav > ul {
+			display: flex;
+			list-style: none; /* Remove default list styles */
+			padding: 0;
+			margin: 0;
+			justify-content: flex-start;
+			align-items: center;
 		}
 
-			#nav > ul > li > a, #nav > ul > li > span {
-				color: #fff;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-weight: 800;
-				font-size: 0.95em;
-				letter-spacing: 0.075em;
-				padding: 0.5em 0.8em 0.5em 0.8em;
-				border-radius: 6px;
-				outline: 0;
+			#nav > ul > li {
+				/*float: left;
+				 padding: 0 0.8em 0 0.8em;  */
+				margin: 0 0.5em; /* Add spacing between items */
+				list-style: none;
+				
 			}
 
-			#nav > ul > li.active > a,
-			#nav > ul > li.current_page_item > a,
-			#nav > ul > li.active > span,
-			#nav > ul > li.current_page_item > span {
-				background: rgba(0, 0, 0, 0.15);
-				box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.025), 1px 1px 0px 0px rgba(255, 255, 255, 0.025);
-			}
+				
+					#nav > ul > li > a, #nav > ul > li > span {
+						display: inline-block;
+						color: #fff;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-weight: 800;
+						font-size: 0.95em;
+						letter-spacing: 0.075em;
+						padding: 0.5em 0.8em ;
+						border-radius: 6px;
+						outline: 0;
+						transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+						box-sizing: border-box;
+					}
 
-			#nav > ul > li:last-child {
-				padding-right: 0;
-			}
+					#nav > ul > li > a:hover {
+						transform: scale(1.1); /* Scale only the link */
+						transform-origin: center center; /* Scale from the center */
+					}
 
-			#nav > ul > li > ul {
-				display: none;
-			}
+					#nav > ul > li.active > a,
+					#nav > ul > li.current_page_item > a,
+					#nav > ul > li.active > span,
+					#nav > ul > li.current_page_item > span {
+						background: rgba(0, 0, 0, 0.15);
+						box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.025), 1px 1px 0px 0px rgba(255, 255, 255, 0.025);
+					}
+
+					#nav > ul > li:last-child {
+						padding-right: 0;
+					}
+
+					#nav > ul > li > ul {
+						display: none;
+					}
+
+					#nav > ul > li > a.highlight {
+						animation: glow 2s infinite;
+						background-color: #ffffff00;
+						color: #ffffff;
+						border-radius: 5px;
+						padding: 0.5em 0.7em;
+						transition: transform 0.2s ease;
+					}
+					
+					
+					/* Animation for a smoother circular effect */
+					@keyframes glow {
+						0%, 100% {
+							box-shadow: 0 0 20px #ffc107;
+						}
+						20% {
+							box-shadow: 0 0 0px #ffc107;
+						}
+						80% {
+							box-shadow: 0 0 0px #ffc107;
+						}
+					}
 
 	.dropotron {
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("images/bg02.png");
@@ -1802,7 +1852,7 @@ input, select, textarea {
 
 	#banner {
 	width: 100%;
-	padding: 4em 0 2em 0;
+	padding: 9em 0em 7em 0em;
 }
 
 
@@ -1870,14 +1920,14 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("../../images/sky.jpg");
+		background: url("../../images/sky.webp");
 		background-position: top left, center center;
 		background-size: auto, cover;
 		padding: 3em 0;
 	}
 
 	#header-wrapper-home {
-	background: url("../../images/sky.jpg");
+	background: url("../../images/sky.webp");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1888,7 +1938,7 @@ input, select, textarea {
 
 
 	#header-wrapper-location {
-		background: url("../../images/posgrado.jpg");
+		background: url("../../images/location.webp");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1896,11 +1946,11 @@ input, select, textarea {
 		width: 100%;
 		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
+		height: 600px;
 	}
 
 	#header-wrapper-people {
-        background: url("../../images/posgrado-img.jpeg");
+        background: url("../../images/derivate.webp");
         background-position: top left, center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1909,31 +1959,30 @@ input, select, textarea {
 		width: 100%;
 		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
+		height: 600px;
     }
 
-	#header-wrapper-abstract {
-        background:  url("../../images/toledo-sunset.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: top;
-		height: 100%;
-		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 440px;
-    }
-
-	#header-wrapper-scientific {
-        background:  url("../../images/toledo-bridge-day.jpg");
+	#header-wrapper-schedule {
+        background:  url("../../images/schedule.webp");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: 600px;
+		width: 100%;
+        padding: 3em 0;
+		background-blend-mode: darken;
+    }
+
+	#header-wrapper-registration {
+        background:  url("../../images/registration.webp");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: auto;
 		width: 100%;
 		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
+		height: 600px;
     }
 
 	#header-wrapper-poster {
@@ -1949,7 +1998,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-social {
-        background:  url("../../images/toledo-bridge-night3.jpg");
+        background:  url("../../images/");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1957,21 +2006,21 @@ input, select, textarea {
 		width: 100%;
 		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
+		height: 600px;
     }
 
 
 	#header-wrapper-coc {
-        background:  url("../../images/toledo-night1.jpg");
+        background:  url("../../images/coc.webp");
         background-position: top left, center center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: top;
+		background-position: center;
 		height: 100%;
 		width: 100%;
 		object-fit: contain;
         padding: 3em 0;
-		height: 440px;
+		height: 600px;
     }
 
 	#main-wrapper {
@@ -2160,7 +2209,7 @@ input, select, textarea {
 
 			#banner {
 				width: 100%;
-				padding: 4em 0 2em 0;
+				padding: 3.2cm 0 0cm 0;
 			}
 
 				#banner h2 {
@@ -2419,7 +2468,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 8em 0 4em 0;
+				padding: 5.9cm 0 4em 0;
 			}
 
 				#banner br {
@@ -2524,7 +2573,7 @@ input, select, textarea {
 			}
 
 			#footer-wrapper {
-				padding: 3em 20px 3em 20px;
+				padding: 3em 20px 5em 20px;
 			}
 
 				#footer-wrapper section, #footer-wrapper article {
@@ -2538,11 +2587,11 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 50px 20px 10px 20px;
+				padding: 6cm 20px 0cm 20px;
 			}
 
 				#banner h2 {
-					font-size: 20pt !important;
+					font-size: 23pt !important;
 				}
 
 		/* Sidebar */
