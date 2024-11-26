@@ -130,6 +130,7 @@
 
 			<!-- Footer Wrapper -->
 				<div id="footer-wrapper-logo">
+					
 					<footer id="footer" class="container">
 						<div class="row">
 							<div class="col-3 col-6-medium col-12-small">
@@ -143,11 +144,15 @@
 														<dt>Correo:</dt>
 														<dd><a href="mailto:derivatesanmarcos@gmail.com">derivatesanmarcos@gmail.com</a></dd>
 												</div>
+											</div>
+										</div>	
 									</section>
-							</div>
+									
 							</div>
 						</div>
+						<div id="footer-placeholder"></div>
 					</footer>
+					
 				</div>
 
 		</div>
@@ -160,6 +165,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Dynamically load the footer content
+				fetch('footer.html')
+					.then(response => {
+						if (!response.ok) {
+							throw new Error('Failed to load footer content');
+						}
+						return response.text();
+					})
+					.then(data => {
+						const footerPlaceholder = document.getElementById('footer-placeholder');
+						footerPlaceholder.innerHTML = data;
 
+						// Force reapply styles
+						footerPlaceholder.classList.add('dynamic-content-loaded');
+					})
+					.catch(error => {
+						console.error('Error loading footer:', error);
+					});
+			</script>
+
+		
 	</body>
+	
 </html>

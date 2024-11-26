@@ -1171,12 +1171,12 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -10px;
-					margin-left: -10px;
+					margin-top: 0px;
+					margin-left: -5px;
 				}
 
 					.row > * {
-						padding: 10px 0 0 10px;
+						padding: 0px 0 0 30px;
 					}
 
 					.row.gtr-uniform {
@@ -2054,6 +2054,51 @@ input, select, textarea {
 		height: 330px;
 	}
 
+	#footer-credits {
+		display: flex;
+		justify-content: center; /* Center the content horizontally */
+		align-items: center; /* Align items vertically */
+		flex-wrap: wrap; /* Allow wrapping on smaller screens */
+		text-align: center;
+		margin-top: 2em; /* Add spacing from the content above */
+		gap: 0cm; /* Add spacing between sections */
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+	}
+	
+	.footer-section {
+		display: flex;
+		flex-direction: column; /* Stack content vertically */
+		align-items: center; /* Center align content in each section */
+		flex: none; /* Allow equal spacing for each section */
+		margin: 0 4em;
+	}
+	
+	.organizer-logo,
+	.supporter-logo {
+		max-height: 2.5em; /* Adjust the height of logos */
+		width: auto; /* Maintain aspect ratio */
+		margin-top: 0.5em; /* Add spacing between text and logos */
+	}
+	
+	.supporters-logos {
+		display: flex;
+		justify-content: center; /* Center the logos */
+		gap: 1em; /* Add spacing between logos */
+	}
+
+	#footer-placeholder img {
+		max-height: 2.5em; /* Adjust logo height */
+		width: auto; /* Maintain aspect ratio */
+		margin: 0.5em; /* Add some spacing */
+	}
+
+	.dynamic-content-loaded img {
+		max-height: 2.5em; /* Adjust logo size */
+		width: auto;
+		margin: 0.5em;
+	}
+
 
 	.wrapper {
 		padding: 5em 0 6em 0;
@@ -2531,9 +2576,6 @@ input, select, textarea {
 			}
 
 			
-		
-			
-		}
 
 		/* Section/Article */
 
@@ -2635,8 +2677,13 @@ input, select, textarea {
 		/* Footer */
 
 			#copyright {
-				margin-top: 0;
+				margin-top: 0cm;
 				padding: 3em 0 1em 0;
 			}
+
+			
+		
+			
+	}	
 
 	
