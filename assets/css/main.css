@@ -240,6 +240,8 @@ input, select, textarea {
 
 			
 
+			
+
 		}
 
 /* Row */
@@ -977,6 +979,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1611,7 +1614,7 @@ input, select, textarea {
 			display: flex;
 			width: 100%;
 			padding: 10px;
-			justify-conent: space-evenly;
+			justify-content: space-evenly;
 			align-items: left;
 		  }
 		div.flexbox .element {
@@ -1737,6 +1740,13 @@ input, select, textarea {
 		justify-content: flex-end;
 		align-items: center;
 	}
+
+		#logo img {
+			max-height: 1.4cm; /* Restrict the maximum height of the logo */
+			width: auto; /* Maintain aspect ratio */
+			margin: 15px; /* Remove any extra spacing */
+			display: block; /* Ensures it's treated as a block element */
+		}
 
 		#nav > ul {
 			display: flex;
@@ -2096,7 +2106,11 @@ input, select, textarea {
 			border-radius: 8px;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.45), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.15);
 			text-shadow: -.5px -.5px 1.5px rgba(0, 0, 0, 0.5);
+			display: flex; /* Enables Flexbox layout */
+    		align-items: center; /* Vertically centers the logo and nav links */
+    		justify-content: space-between; /* Space out logo and links */
 		}
+
 
 		#header h1 {
 			position: absolute;
@@ -2280,17 +2294,26 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
+				justify-content: center;
 			}
 
+
 				#titleBar .title {
-					display: block;
+					display: flex;
 					text-transform: uppercase;
 					font-weight: 800;
 					letter-spacing: 0.04em;
 					color: #fff;
-					line-height: 44px;
 					text-align: center;
+					justify-content: center;
+					align-items: center;
+					height: 110%;
 				}
+
+					#titleBar .title img {
+						max-height: 2em; /* Smaller height for mobile screens */
+						width: auto; /* Maintain aspect ratio */
+					}
 
 				#titleBar .toggle {
 					text-decoration: none;
@@ -2300,6 +2323,7 @@ input, select, textarea {
 					width: 60px;
 					height: 44px;
 					opacity: 0.25;
+					margin-right: 0px;
 				}
 
 					#titleBar .toggle:before {
@@ -2330,6 +2354,9 @@ input, select, textarea {
 					#titleBar .toggle:active {
 						opacity: 0.5;
 					}
+
+					
+			
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2484,7 +2511,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				line-height: 1.75em;
-				font-size: 10pt;
+				font-size: 11pt;
 				letter-spacing: 0;
 			}
 
@@ -2502,6 +2529,11 @@ input, select, textarea {
 				margin: 0 auto; /* Centra la tabla */
 				width: 100%; /* Asegura que se ajuste al ancho del contenedor */
 			}
+
+			
+		
+			
+		}
 
 		/* Section/Article */
 
@@ -2607,4 +2639,4 @@ input, select, textarea {
 				padding: 3em 0 1em 0;
 			}
 
-	}
+	

@@ -1190,7 +1190,7 @@ div.flexbox {
   display: flex;
   width: 100%;
   padding: 10px;
-  justify-conent: space-evenly;
+  justify-content: space-evenly;
   align-items: left;
 }
 div.flexbox .element {
