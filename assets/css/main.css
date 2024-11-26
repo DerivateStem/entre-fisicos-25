@@ -102,12 +102,14 @@ input, select, textarea {
 			animation: none !important;
 		}
 
+		
+
 	body, input, select, textarea {
 		font-family: 'Inter', sans-serif;
 		color: #5c6169;
 		font-weight: 400;
 		font-size: 11pt;
-		line-height: 1.85em;
+		line-height: 1.9em;
 	}
 
 	a {
@@ -1565,6 +1567,14 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		.spaced-list li {
+			margin-bottom: 15px; /* Ajusta el espacio entre puntos aquí */
+		}
+		
+		.spaced-list li:last-child {
+			margin-bottom: 0; /* Elimina el margen inferior del último punto */
+		}
+
 	ul.actions li {
 		display: inline-block;
 		padding: 0 0 0 0.25em;
@@ -1950,7 +1960,7 @@ input, select, textarea {
 		background-size: cover;
 		height: auto;
 		width: 100%;
-		padding: 3em ;
+		padding: 1.17cm 20px 2cm 20px ;
 	}
 
 
@@ -2119,13 +2129,15 @@ input, select, textarea {
 			background-position: top center, bottom center, top left;
 		}
 
+		
+
 		.wrapper.style3 {
 			position: relative;
 			text-shadow: -.5px -.5px 1.5px #fff;
 			background-color: #fff;
 			background-image: url("images/bg03.png"), url("images/bg02.png");
 			background-repeat: no-repeat, repeat;
-			background-size: 100% 15em, auto auto;
+			background-size: 100% 15em, 100% 15em, auto auto;
 			background-position: top center, top left;
 		}
 
@@ -2555,7 +2567,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				line-height: 1.75em;
+				line-height: 2em;
 				font-size: 11pt;
 				letter-spacing: 0;
 			}

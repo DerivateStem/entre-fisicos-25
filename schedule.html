@@ -36,9 +36,28 @@
 			.lowercase {
             text-transform: lowercase;
         }
+
+		.button-primary {
+			display: inline-block;
+			padding: 15px 30px;
+			background-color: #3665ef; /* Button background color */
+			color: #ffffff; /* Text color */
+			text-decoration: none; /* Remove underline */
+			font-size: 1.2em; /* Text size */
+    		font-weight: bold; /* Bold text */
+			border-radius: 8px; /* Rounded corners */
+			transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth hover effects */
+			text-shadow: 0px 0px 0px rgba(54, 100, 239, 0);
+		}
+		
+		.button-primary:hover {
+			background-color: #2449c2; /* Darker shade for hover */
+			transform: scale(1.05); /* Slight zoom effect */
+		}
+
 		</style>
 	</head>
-	<body class="no-sidebar is-preload">
+	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
@@ -89,8 +108,34 @@
 									<!-- Content -->
 
 									<article>
+										<section id="event-details"">
+											<header class="major">
+												<h3>🧐 ¿Qué te espera en Entre Físicos? </h3>
+											</header>
+											
+												<em>Entre Físicos 2025</em> no es solo un evento, es una experiencia que puede marcar un antes y un después en tu camino como físico. Aquí te contamos cómo está organizado cada día para que no te pierdas nada:
+											<ul class="spaced-list" align="left" style="margin-left:10px; margin-bottom:10px; margin-top:10px;">
+												<li>
+													<strong>🌟 Charlas que iluminan:</strong> Tres charlas al día donde ponentes de distintas áreas te contarán sobre sus investigaciones, proyectos más recientes y cómo su trabajo está impactando el mundo. Al final de cada charla, habrá un espacio para preguntas específicas sobre su investigación y cómo aplican la física en sus campos. Este es tu momento para conocer de cerca cómo es trabajar en su área.
+												</li>
+												<li>
+													<strong>🍩 Social Break: donde las ideas fluyen:</strong> Entre las sesiones, hacemos una pausa estratégica. Imagina esto: estás disfrutando un snack, conversando de forma casual con un ponente o conectando con otros estudiantes. El <em>Social Break</em> es más que un descanso, es tu oportunidad para construir relaciones, intercambiar ideas y, quién sabe, tal vez empezar una colaboración que cambiará el futuro.
+												</li>
+												<li>
+													<strong>🎤 Mesa redonda: la vida detrás de las fórmulas:</strong> Cerramos el día con una conversación relajada y cercana entre los ponentes y tú. ¿Cómo eligieron su camino? ¿Qué retos enfrentaron después del pregrado? Aquí puedes preguntar todo lo que tengas en mente: desde opciones de maestrías y doctorados hasta cómo mantener la motivación en un campo tan desafiante.
+												</li>
+											</ul>
+												Cada charla, cada pausa y cada interacción están diseñadas para que termines el evento con más que conocimiento: nuevas ideas, contactos valiosos y la inspiración que necesitas para dar el siguiente paso. 🚀 <strong>¡No te quedes con las ganas. Regístrate y forma parte de esta experiencia!</strong>
+											
+												<div style="text-align: center; margin-top: 50px;">
+													<a href="registration.html" class="button-primary">REGÍSTRATE AQUÍ</a>
+												</div>
+											
+										</section>
+								
+
 										<header class="major">
-											<h3> ⏰ Programa del Evento</h3>
+											<h3> ⏰ Cronograma</h3>
 										</header>
 										
 										<div id="table-program"></div>
