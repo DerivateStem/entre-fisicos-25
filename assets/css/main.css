@@ -2496,6 +2496,13 @@ input, select, textarea {
 				line-height: .5em;
 			}
 
+			.table-container {
+				overflow-x: auto; /* Habilita desplazamiento horizontal */
+				-webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos móviles */
+				margin: 0 auto; /* Centra la tabla */
+				width: 100%; /* Asegura que se ajuste al ancho del contenedor */
+			}
+
 		/* Section/Article */
 
 			section, article {
