@@ -14,6 +14,24 @@
 			.lowercase {
             text-transform: lowercase;
         }
+
+		.button-primary {
+			display: inline-block;
+			padding: 15px 30px;
+			background-color: #3665ef; /* Button background color */
+			color: #ffffff; /* Text color */
+			text-decoration: none; /* Remove underline */
+			font-size: 1.2em; /* Text size */
+    		font-weight: bold; /* Bold text */
+			border-radius: 8px; /* Rounded corners */
+			transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth hover effects */
+			text-shadow: 0px 0px 0px rgba(54, 100, 239, 0);
+		}
+		
+		.button-primary:hover {
+			background-color: #2449c2; /* Darker shade for hover */
+			transform: scale(1.05); /* Slight zoom effect */
+		}
 		</style>
 	</head>
 	<body class="homepage is-preload">
@@ -97,7 +115,10 @@
 											<p align="justify"> &#128197; Del 6 al 10 de enero, te esperamos en el auditorio de la <b>Unidad de Posgrado</b> de la <b>Facultad de Ciencias Físicas</b> de la <b>Universidad Nacional Mayor de San Marcos</b>. &#9888; No esperes mucho, el aforo es limitado, y las inscripciones abren el 4 de diciembre. &#9997; Este podría ser el evento que cambie tu vida. &#10024; </p>
 											<h4 align="justify">¡Construye tu futuro en Física!</h4>
 											<p align="justify"> &#128279; <a href="registration.html">Regístrate.</a> Inspírate. Descubre hasta dónde puedes llegar.  &#128640; </p>
-											</header>
+											
+											<div style="text-align: center; margin-top: 50px;">
+												<a href="registration.html" class="button-primary">REGÍSTRATE AQUÍ</a>
+											</div>
 										</div>
 									</div>
 								</section>

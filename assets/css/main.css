@@ -212,6 +212,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 100px);
 		width: 1200px;
+		
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -1919,21 +1920,24 @@ input, select, textarea {
 
 /* Wrappers */
 
-	#header-wrapper {
-		background: url("../../images/sky.webp");
-		background-position: top left, center center;
-		background-size: auto, cover;
-		padding: 3em 0;
-	}
+#header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 	#header-wrapper-home {
-	background: url("../../images/sky.webp");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: auto;
-	width: 100%;
-    padding: 3em ;
+		background: url("../../images/sky.webp");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: auto;
+		width: 100%;
+		padding: 3em ;
 	}
 
 
@@ -1942,35 +1946,30 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 600px;
+        padding: 1.17cm 20px 2cm 20px;
 	}
 
 	#header-wrapper-people {
         background: url("../../images/derivate.webp");
-        background-position: top left, center center;
-		background-size: cover;
+        background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 600px;
-    }
+        padding: 1.17cm 20px 2cm 20px;
+	}
+		
 
 	#header-wrapper-schedule {
         background:  url("../../images/schedule.webp");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 600px;
+		height: auto;
 		width: 100%;
-        padding: 3em 0;
-		background-blend-mode: darken;
+        padding: 1.17cm 20px 2cm 20px;
     }
 
 	#header-wrapper-registration {
@@ -1980,9 +1979,7 @@ input, select, textarea {
 		background-position: center;
 		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 600px;
+        padding: 1.17cm 20px 2cm 20px;
     }
 
 	#header-wrapper-poster {
@@ -1990,11 +1987,9 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 440px;
+        padding: 1.17cm 20px 2cm 20px;
     }
 
 	#header-wrapper-social {
@@ -2002,25 +1997,20 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 600px;
+        padding: 1.17cm 20px 2cm 20px;
     }
 
 
 	#header-wrapper-coc {
         background:  url("../../images/coc.webp");
-        background-position: top left, center center;
-		background-size: cover;
+        background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 100%;
+		height: auto;
 		width: 100%;
-		object-fit: contain;
-        padding: 3em 0;
-		height: 600px;
+        padding: 1.17cm 20px 2cm 20px;
     }
 
 	#main-wrapper {
@@ -2587,7 +2577,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6cm 20px 0cm 20px;
+				padding: 2.5cm 20px 1cm 20px;
 			}
 
 				#banner h2 {
