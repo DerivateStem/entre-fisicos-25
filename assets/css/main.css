@@ -2071,7 +2071,7 @@ input, select, textarea {
 		flex-wrap: wrap; /* Allow wrapping on smaller screens */
 		text-align: center;
 		margin-top: 2em; /* Add spacing from the content above */
-		gap: 0cm; /* Add spacing between sections */
+		gap: 2cm; /* Add spacing between sections */
 		font-weight: bold;
 		color: rgb(255, 255, 255);
 	}
@@ -2081,7 +2081,7 @@ input, select, textarea {
 		flex-direction: column; /* Stack content vertically */
 		align-items: center; /* Center align content in each section */
 		flex: none; /* Allow equal spacing for each section */
-		margin: 0 4em;
+		margin: 0 0em;
 	}
 	
 	.organizer-logo,
@@ -2094,13 +2094,13 @@ input, select, textarea {
 	.supporters-logos {
 		display: flex;
 		justify-content: center; /* Center the logos */
-		gap: 1em; /* Add spacing between logos */
+		gap: 0.1em; /* Add spacing between logos */
 	}
 
 	#footer-placeholder img {
-		max-height: 2.5em; /* Adjust logo height */
+		max-height: 2em; /* Adjust logo height */
 		width: auto; /* Maintain aspect ratio */
-		margin: 0.5em; /* Add some spacing */
+		margin: 0.1em; /* Add some spacing */
 	}
 
 	.dynamic-content-loaded img {
