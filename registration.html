@@ -97,16 +97,65 @@
 									 
 										<article>
 											<header class="major">
-												<h3>&#128198; Inscripciones: 5 de diciembre  </h3>
+												<h3>&#128198; Inscripciones: 5 de diciembre </h3>
 											</header>
 											<div class="centered-text">
-												<p>
-													🕛 Aún no se abren las inscripciones 🕛
-													<br>
-													Regresa el 5 de diciembre
-
+												<p id="countdown">
+													🕛 Calculando tiempo restante... 🕛
 												</p>
+												<div id="form-container" style="display: none;">
+													<iframe 
+														src="https://docs.google.com/forms/d/e/1FAIpQLSeloTQ8vRUFeFcWIMFGk5WKAkito0M8zQ-3nB5kwwe4SsulNQ/viewform?embedded=true" 
+														width="100%" 
+														height="996" 
+														frameborder="0" 
+														marginheight="0" 
+														marginwidth="0">
+														Cargando…
+													</iframe>
+												</div>
 											</div>
+
+											<script>
+												document.addEventListener('DOMContentLoaded', function () {
+													// Set the target date and time (adjust to your time zone if necessary)
+													const targetDate = new Date('2024-12-05T00:00:01-05:00');
+													
+											
+													// Reference to the countdown and form elements
+													const countdownElement = document.getElementById('countdown');
+													const formContainer = document.getElementById('form-container');
+											
+													// Function to update the countdown timer
+													function updateCountdown() {
+														const now = new Date();
+														const timeDifference = targetDate - now;
+											
+														if (timeDifference <= 0) {
+															// Time reached, show the form
+															countdownElement.style.display = 'none'; // Hide the countdown
+															formContainer.style.display = 'block';  // Show the form
+															clearInterval(timerInterval);          // Stop the timer
+															return;
+														}
+											
+														// Calculate days, hours, minutes, and seconds
+														const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+														const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+														const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+														const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+											
+														// Update the countdown display
+														countdownElement.innerHTML = `⏳ Inscripciones en: ${days}d ${hours}h ${minutes}m ${seconds}s ⏳`;
+													}
+											
+													// Update the countdown every second
+													const timerInterval = setInterval(updateCountdown, 1000);
+											
+													// Initial call to display the countdown immediately
+													updateCountdown();
+												});
+											</script>
 											<!--
 												<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeloTQ8vRUFeFcWIMFGk5WKAkito0M8zQ-3nB5kwwe4SsulNQ/viewform?embedded=true" 
 													width="100%" 
